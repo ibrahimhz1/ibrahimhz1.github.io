@@ -39,6 +39,38 @@ nav h1 {
     font-weight: 700;
 }
 
+
+.mobile-nav{
+    display: block;
+    position: fixed;
+    top: 10;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 100px);
+    min-height: 100vh;
+    z-index: 99;
+    background-color: #10171fc7;
+    padding-top: 100px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active{
+    right: 0;
+}
+
+.mobile-nav li{
+    display: block;
+    text-align: center;
+    margin: 0 auto 16px;
+    padding: 16px 20px;
+    background-color: rgb(187, 187, 187);
+    width: 80%; 
+    color: #ffffff;
+    font-family: poppins;
+    border-radius: 10vmax;
+    font-weight: 700;
+}
+
 .logo-div {
     display: flex;
     align-items: center;
